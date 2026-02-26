@@ -2,9 +2,25 @@
 #    uv export --format requirements.txt --no-dev --group prod --output-file requirements.txt --no-hashes --frozen
 asgiref==3.11.1
     # via django
-django==6.0.2
+crispy-bootstrap5==2025.6
     # via resulog
+dj-database-url==3.1.2
+    # via resulog
+django==6.0.2
+    # via
+    #   crispy-bootstrap5
+    #   dj-database-url
+    #   django-crispy-forms
+    #   resulog
+django-crispy-forms==2.5
+    # via
+    #   crispy-bootstrap5
+    #   resulog
 gunicorn==25.1.0
+markdown==3.10.2
+    # via resulog
+nh3==0.3.3
+    # via resulog
 packaging==26.0
     # via gunicorn
 python-dotenv==1.2.1
@@ -13,3 +29,5 @@ sqlparse==0.5.5
     # via django
 tzdata==2025.3 ; sys_platform == 'win32'
     # via django
+whitenoise==6.11.0
+    # via resulog
