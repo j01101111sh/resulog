@@ -23,7 +23,7 @@ nh3==0.3.3
     # via resulog
 packaging==26.0
     # via gunicorn
-python-dotenv==1.2.1
+python-dotenv==1.2.2
     # via resulog
 sqlparse==0.5.5
     # via django
