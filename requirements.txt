@@ -23,11 +23,16 @@ nh3==0.3.5
     # via resulog
 packaging==26.2
     # via gunicorn
+psycopg==3.3.4
+psycopg-binary==3.3.4 ; implementation_name != 'pypy'
+    # via psycopg
 python-dotenv==1.2.2
     # via resulog
 sqlparse==0.5.5
     # via django
 tzdata==2026.2 ; sys_platform == 'win32'
-    # via django
+    # via
+    #   django
+    #   psycopg
 whitenoise==6.12.0
     # via resulog
